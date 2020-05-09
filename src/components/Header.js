@@ -15,7 +15,7 @@ class Header extends React.Component {
                 <div className='nav'>
                 
                   <div className='nav-link'>
-                  <a href='/'>Home</a>
+                  <a href='http://hfdzafrnsyh.github.io/demo-app'>Home</a>
                   </div>
                   
                 </div>
