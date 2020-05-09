@@ -1,38 +1,343 @@
-.App {
+.nav {
+  float: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #0d0d73;
+  opacity: 0.8;
+}
+
+.nav-link {
+  margin: 20px 20px;
+}
+
+.nav-link a {
+  color: #fff;
+  font-size: 20px;
+}
+
+
+
+.nav-link a:hover {
+  color: #ffff2b;
+  opacity: 1;
+}
+
+.header {
+  height: 700px;
+  /* background-color: #333333; */
+  background-image: url('./components/images/back-img6.jpg');
+  background-size: cover;
+  width: 100%;
+}
+
+
+.header-logo {
+  width: 100%;
+  height: 85px;
+  background-color: #4040ff;
+  display: inline-block;
+}
+
+
+.header-logo img {
+  width: 100px;
+  padding-top: 5px;
+  float: left;
+  padding-bottom: 5px;
+}
+
+.header-logo h3 {
+  color: #fff;
+  font-size: 25px;
+  display: inline-block;
+}
+
+.header-caption {
+  text-align: center;
+  color: #ffff;
+
+}
+
+.header-caption h1 {
+  font-size: 50px;
+  padding-top: 50px;
+}
+
+.header-caption p {
+  font-size: 30px;
+}
+
+.header-profile {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-profile img {
+  width: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-wrapper {
+  margin: 20px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+  border: 2px solid #ffff2b;
+}
+
+
+.profile {
+  background-color: #4040ff;
+}
+
+/* main */
+
+
+.lesson-wrapper {
+  height: auto;
+  width: 100%;
+  padding-bottom: 60px;
+  background-color: #e2dedf;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+.heading-lesson {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  color: black;
+
+}
+
+.heading-lesson h1 {
+  font-weight: normal;
+}
+
+.lessons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+
+.lesson {
+  flex: auto;
+  box-shadow: 2px 2px 3px 3px #808080;
+  margin: 10px 10px;
+
+}
+
+
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon img {
+  width: 200px;
+}
+
+.lesson-icon h4 {
+  position: absolute;
+  top: 90px;
+  width: 100%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.txt-content {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #b3aeb5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.lesson:hover {
+  padding-top: 10px;
+  border: 1px solid #4040ff;
+}
+
+
+
+
+
+/* portfolio */
+.portfolio {
+  padding-bottom: 60px;
+  text-align: center;
+
+}
+
+.portfolio-title {
+  padding: 20px 20px;
+  color: black;
+  font-size: 30px;
+  opacity: 0.7;
+
+}
+
+.portfolio-link a {
+  text-align: center;
+  color: black;
+  font-size: 17px;
+  opacity: 0.7;
+  border: 2px solid black;
+  padding: 5px 25px;
+  margin: 3px 3px;
+  border-radius: 5px;
+}
+
+.portfolio-link a:hover {
+  border: rgba(240, 10, 10, 0.5) solid 2px;
+  opacity: 0.9;
+  color: black;
+
+}
+
+.portfolio-image {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.portfolio-image img {
+  flex: auto;
+  width: 50%;
+  height: 200px;
+  opacity: 0.7;
+  filter: grayscale(50%);
+}
+
+.portfolio-image img:hover {
+  opacity: 1;
+  filter: grayscale(0%)
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+
+  .lessons {
+    flex-wrap: wrap;
   }
-  to {
-    transform: rotate(360deg);
+
+  .lesson {
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: none;
+
+
   }
+
+  .lesson:hover {
+    border: none;
+  }
+}
+
+
+@media screen and (max-width:670px) {
+  .portfolio-image {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-image img {
+    width: 100%;
+  }
+
+  .lessons {
+    flex-direction: column;
+  }
+
+  .lesson {
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: none;
+
+  }
+
+  .portfolio-link a {
+    margin: 1 auto;
+    padding: 10px 10px;
+  }
+
+}
+
+
+
+
+
+/* akhir portfolio */
+
+
+
+/* About */
+
+.about-lesson {
+  border-top: 2px solid black;
+  text-align: center;
+  height: auto;
+}
+
+.about-icon {
+  position: relative;
+  padding-top: 40px;
+
+}
+
+.about-icon h4 {
+  position: absolute;
+  top: 65px;
+  width: 100%;
+  color: white;
+}
+
+
+.about-icon img {
+  width: 100px;
+}
+
+.about-lesson p {
+  padding: 40px 40px;
+  opacity: 0.7;
+}
+
+
+/* akhir about */
+
+
+/* akhir main */
+
+/* footer */
+
+.footer {
+
+  text-align: center;
+  background-color: #4040ff;
+  height: 70px;
+}
+
+.footer h5 {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #ffff;
+}
+
+.footer a {
+  color: #dc143c;
 }
